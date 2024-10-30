@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // Kiểm tra và yêu cầu quyền nếu cần
+
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_SMS)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("sms_prefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // Convert ArrayList to a Set for saving
+
         Set<String> smsSet = new HashSet<>(smsList);
         editor.putStringSet("sms_list", smsSet);
         editor.apply();

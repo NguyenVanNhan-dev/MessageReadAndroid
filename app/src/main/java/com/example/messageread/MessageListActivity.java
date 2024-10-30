@@ -17,7 +17,7 @@ public class MessageListActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listViewMessages);
         SharedPreferences sharedPreferences = getSharedPreferences("sms_prefs", MODE_PRIVATE);
 
-        // Convert saved Set back to ArrayList
+        
         Set<String> smsSet = sharedPreferences.getStringSet("sms_list", new HashSet<>());
         ArrayList<String> smsList = new ArrayList<>(smsSet);
 

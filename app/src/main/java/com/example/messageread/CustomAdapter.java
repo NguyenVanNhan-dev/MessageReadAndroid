@@ -57,7 +57,7 @@ public class CustomAdapter extends BaseAdapter {
         tvSender.setText(sender);
         tvMessage.setText(msgContent);
 
-        // Xử lý sự kiện nhấp vào mỗi mục danh sách
+        
         convertView.setOnClickListener(v -> {
             new AlertDialog.Builder(context)
                     .setTitle("Thông tin tin nhắn")

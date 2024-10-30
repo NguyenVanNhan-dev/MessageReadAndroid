@@ -13,11 +13,11 @@ public class MessageDetailActivity extends AppCompatActivity {
         TextView tvSenderDetail = findViewById(R.id.tvSenderDetail);
         TextView tvMessageDetail = findViewById(R.id.tvMessageDetail);
 
-        // Nhận dữ liệu tin nhắn từ Intent
+        
         String sender = getIntent().getStringExtra("sender");
         String message = getIntent().getStringExtra("message");
 
-        // Hiển thị dữ liệu tin nhắn
+        
         tvSenderDetail.setText(sender);
         tvMessageDetail.setText(message);
     }
